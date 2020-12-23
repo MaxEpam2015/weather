@@ -1,0 +1,1 @@
+*/10 * * * * root /usr/bin/php /app/bin/console app:weather >> /manager/var/log/synchronize.log 2>> /manager/var/log/synchronize-error.log

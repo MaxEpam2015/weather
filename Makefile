@@ -43,3 +43,8 @@ cli:
 
 run:
 	docker-compose run --rm manager-php-cli composer create-project symfony/website-skeleton skeleton
+
+tasks: sf_console
+	@echo "Executing application tasks"
+	@$(CONSOLE) app:weather
+.PHONY: tasks

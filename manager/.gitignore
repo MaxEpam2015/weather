@@ -15,6 +15,13 @@
 ###< symfony/phpunit-bridge ###
 
 ###> IDE, cache ###
+.idea
+.DS_Store
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+public/mix-manifest.json
 .idea/
 manager/var/cache/
 ###< IDE, cache ###
