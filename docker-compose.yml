@@ -16,7 +16,8 @@ services:
       dockerfile: php-fpm.docker
     volumes:
       - ./manager:/app
-#      - ./manager/docker/development/crontab:/etc/cron.d/weather
+      - ./manager/docker/development/crontab:/etc/cron.d/test
+
   manager-php-cli:
     build:
       context: ./manager/docker/development
@@ -26,6 +27,7 @@ services:
       - composer:/root/.composer/cache
     environment:
       APP_DEBUG: 1
+
   clickhouse:
     image:
       flexberry/clickhouse-official

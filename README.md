@@ -3,5 +3,8 @@
 -Starting a Symfony Project:
 ```
 make init
-docker-compose run --rm manager-php-cli composer install
+```
+-Run command from container:
+```
+docker-compose run --rm manager-php-cli php bin/console app:weather
 ```

@@ -47,6 +47,7 @@ class WeatherFetcher
 
     /**
      * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws \Exception
      */
     public function fetchWeather(): void
     {
